@@ -1,14 +1,24 @@
 import styles from '../styles/home.module.css'
 import NavBar from '../components/NavBar'
+import Image from 'next/image'
+import AuthButtons from '../components/AuthButtons'
 
 function Home() {
 
   return (
     <main className={styles.main}>
       <NavBar />
-      <div className={styles.intro}> 
-        <h1>Beyonce - Act II</h1>
-        <h2>Purchase tickets to the best show ever without the hassle of passwords</h2>
+      <div className={styles.intro}>
+        <Image
+          src="/cowboy-carter.jpg"
+          height={750}
+          width={500}
+        />
+        <div className={styles.title}>
+          <h1>Beyonce - Act II</h1>
+          <h2>Purchase tickets to the best show ever without the hassle of passwords</h2>
+          <AuthButtons />
+        </div>
       </div>
       <h2> Buy Your Tickets Now! </h2>
       <div className={styles.cards}>

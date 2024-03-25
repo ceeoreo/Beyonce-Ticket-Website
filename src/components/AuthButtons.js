@@ -7,14 +7,9 @@ export default function AuthButtons() {
     return (
 			<>
 				{user && (<LogoutButton />)}
-				{!user && (<LogoutButton />)}
+				{!user && (<LoginButton />)}
 			</>
     )
-    // if (user) {
-    //     return <LogoutButton />
-    // } else {
-    //     return <LoginButton />
-    // }
     
 }
 
