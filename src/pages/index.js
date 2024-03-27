@@ -2,6 +2,7 @@ import styles from '../styles/home.module.css'
 import NavBar from '../components/NavBar'
 import Image from 'next/image'
 import AuthButtons from '../components/AuthButtons'
+import Link from 'next/link'
 
 function Home() {
 
@@ -25,7 +26,9 @@ function Home() {
         <div className={styles.card}>
           <p>Basic ticket</p>
           <p>50 Bey Bucks</p>
-          <button>Buy Now!</button>
+          <button>
+            <Link href="/cart">Buy Now!</Link>
+          </button>
         </div>
         <div className={styles.card}>
           <p>Premium ticket</p>
