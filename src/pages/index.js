@@ -3,7 +3,7 @@ import NavBar from '../components/NavBar'
 import Image from 'next/image'
 import AuthButtons from '../components/AuthButtons'
 import Link from 'next/link'
-
+import Footer from '../components/Footer';
 function Home() {
 
   return (
@@ -41,6 +41,7 @@ function Home() {
           <button>Buy Now!</button>
         </div>
       </div>
+      <Footer />
     </main>
   )
 }

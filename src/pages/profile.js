@@ -16,6 +16,8 @@ export default function Profile() {
         <Image
           src={user.picture}
           alt={user.name}
+          height={75}
+          width={75}
         />
         <h2>Welcome {user.name}!</h2>
         <p>{user.email}</p>

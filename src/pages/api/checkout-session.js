@@ -8,13 +8,7 @@ export default async function handler(req, res) {
         payment_method_types: ['card'],
         line_items: [
           {
-            price_data: {
-              currency: 'usd',
-              product_data: {
-                name: 'Beyonce Ticket',
-              },
-              unit_amount: 2000,
-            },
+            price: 'price_1Ow4DzLcO1FmkluyDC8iFYDP',
             quantity: 1,
           },
         ],
