@@ -13,7 +13,6 @@ export default function NavBar() {
       {user && (
         <>
           <li><Link href="/profile">Profile</Link></li>
-          <li><Link href="/cart">Cart</Link></li>
         </>
       )} 
 			<li><AuthButtons /></li>     
